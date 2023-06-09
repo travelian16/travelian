@@ -100,9 +100,10 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
-import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
-import ThankYouPage from "ThankYouPage.js";
+// import ComponentRenderer from "ComponentRenderer.js";
+// import MainLandingPage from "MainLandingPage.js";
+import Traveling from "demos/HotelTravelLandingPage"
+// import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -116,10 +117,11 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-          <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
+          {/* <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
-          <Route path="/thank-you" element={<ThankYouPage />} />
-          <Route path="/" element={<MainLandingPage />} />
+          <Route path="/thank-you" element={<ThankYouPage />} /> */}
+          <Route path="/" element={<Traveling />} />
+          {/* <Route path="/" element={<MainLandingPage />} /> */}
         </Routes>
       </Router>
     </>
